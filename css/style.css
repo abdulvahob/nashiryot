@@ -1,0 +1,412 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto ,  sans-serif ;
+  transition: all .3s ease-out;
+}
+
+a{
+  text-decoration: none;
+}
+*:focus{
+  outline: 2px dotted #FF7500;
+  padding: 2px;
+  box-sizing: content-box;
+}
+ul{
+  list-style: none;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+/* ---------- main link start------------- */
+.main-link{
+  font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0.5px;
+padding: 12px 24px;
+background: #FF7500;
+border-radius: 4px;
+color: #fff;
+display: inline-block;
+
+}
+.main-link:hover{
+  opacity: 80%;
+}
+
+.main-link:active{
+  opacity: 60%;
+}
+/* ---------- main link end  ------------- */
+
+/* ---------orange line start -------- */
+.orange-line{
+  width: 80px;
+  border: none;
+  height: 3px;
+  background: #FF7500;
+}
+/* ---------orange line end -------- */
+
+
+
+/* --------- site heading start --------------- */
+.site-heading{
+  width: 100%;
+  border-top:5px solid #FF7500 ;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+}
+
+.site-heading-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-heading-logo{
+  display: inline-block;
+}
+
+.site-heading-logo img{
+  width: 227px;
+  height: 60px;
+}
+.site-heading-logo img:hover{
+  opacity: 80%;
+}
+.site-heading-logo img:active{
+  opacity: 60%;
+}
+
+.site-heading nav{
+  display: flex;
+}
+
+.site-heading nav ul{
+  display: flex;
+  margin-right: 32px;
+  align-items: center;
+}
+
+.site-heading-item{
+  margin-right: 32px;
+
+}
+
+.site-heading-item:last-child{
+  margin-right: 0;
+}
+
+.site-heading-link{
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: relative;
+}
+.site-heading-link:hover{
+  color: #FF7500;
+}
+
+.site-heading-link::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  /* display: inline-block; */
+  left: 0;
+  background-color: #FF7500;
+  height: 2px;
+  width:0;
+  transition: all .3s ease-in-out;
+}
+.site-heading-link:hover::after{
+  width: 100%;
+}
+/* --------- site heading end --------------- */
+
+/*  --------- hero section start ------------ */
+.hero{
+  background-color: #252420;
+  height: 448px;
+
+}
+
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 88px;
+}
+.hero-container img{
+  width: 500px;
+  height: 500px;
+  margin-top: -40px;
+}
+.hero-content{
+  width: 387px;
+}
+
+.hero-content .orange-line{
+  margin-bottom: 40px;
+}
+
+.hero-heading{
+  font-family: Roboto Condensed , sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.hero-text{
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+/*  --------- hero section end ------------ */
+
+
+
+/* ------------- features section start --------- */
+.features{
+  padding: 210px 0;
+}
+
+.features-container .orange-line{
+  margin-bottom: 24px;
+}
+
+.features-heading{
+  font-family: Roboto Condensed , sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: 0.5px;
+  max-width: 435px;
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.features-items{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.features-item{
+  max-width: 340px;
+  width: 100%;
+
+}
+
+.features-item img{
+  margin-bottom: 32px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.features-item-heading{
+  font-family: Roboto Condensed , sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+
+}
+
+.feature-item-text{
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  max-width: 314px;
+}
+/* ------------- features section end --------- */
+
+/* ----------- promo section start --------- */
+.promo{
+  width: 1100px;
+  height: 419px;
+  margin-top: 120px;
+  margin-bottom: 160px;
+  border-radius: 12px;
+  display: flex;
+  padding: 64px;
+  justify-content: space-between;
+  background-color: #252420;
+}
+
+.promo-content{
+  max-width: 440px;
+  margin-right: 12px;
+  width: 100%;
+}
+.promo-heading {
+  font-family: Roboto Condensed , sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.promo-text{
+  margin-bottom: 24px;
+
+}
+
+.promo-text p{
+  margin-bottom: 12px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+}
+.promo-text p strong{
+  color: #FF7500;
+}
+.promo-text p:last-child{
+  margin-bottom: 0;
+}
+
+.promo-img{
+  width: 440px;
+  height: 440px;
+  object-fit: cover;
+  margin-top: -148px;
+}
+.site-heading-link.active{
+  color: #FF7500;
+}
+
+
+
+/* ----------- promo section end --------- */
+
+
+/* ------------ footer start ------------ */
+.site-footer{
+  padding: 56px 0;
+  background: #F8F8F8;
+}
+
+.site-footer-row{
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer-icon{
+  display: flex;
+  align-items: center;
+}
+
+.site-footer-icon a{
+  display: inline-block;
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.site-footer-icon a svg{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: #252420;
+  object-fit: cover;
+}
+.site-footer-icon a:active svg{
+  color: #FF7500;
+  opacity: 60%;
+
+}
+
+.site-footer-icon a:hover svg {
+  color: #FF7500;
+
+}
+
+
+.footer-line{
+  background: #25242080;
+  height: 2px;
+  margin-bottom: 64px;
+}
+
+.site-footer-bottom{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.site-footer-links{
+  max-width: 224px;
+  width: 100%;
+}
+
+.site-footer-links li{
+  margin-bottom: 16px;
+}
+.site-footer-links li a{
+  font-family: Roboto , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+.site-footer-links li a:hover{
+  color: #FF7500;
+
+}
+.site-footer-links li:last-child{
+  margin-bottom: 0;
+}
+
+/* ------------ footer end ------------ */
