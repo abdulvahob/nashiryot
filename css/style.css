@@ -1,6 +1,14 @@
+body{
+  font-family: 'Roboto', 'Arial' ,  sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
 a{
   text-decoration: none;
-  outline: 2px dotted transparent;
 }
 
 .container{
@@ -17,7 +25,6 @@ a{
 }
 /* ---------- main link start------------- */
 .main-link{
-  font-family: 'Roboto', sans-serif;
 font-size: 13px;
 font-style: normal;
 font-weight: 700;
@@ -103,7 +110,6 @@ display: inline-block;
 }
 
 .site-header-link{
-  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -161,7 +167,7 @@ display: inline-block;
 }
 
 .hero-heading{
-  font-family: Roboto Condensed , sans-serif;
+  font-family: Roboto Condensed , "Roboto",  'Arial' , sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -171,7 +177,6 @@ display: inline-block;
   margin-bottom: 24px;
 }
 .hero-text{
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -182,7 +187,7 @@ display: inline-block;
 }
 /*  --------- hero section end ------------ */
 
-@media (max-width:927px) {
+/* @media (max-width:927px) {
   .hero{
     background-color: #252420;
     height: 765px;
@@ -210,7 +215,7 @@ display: inline-block;
 
     margin-top: -40px;
   }
-}
+} */
 
 /* ------------- features section start --------- */
 .features{
@@ -220,9 +225,8 @@ display: inline-block;
 .features-container .orange-line{
   margin-bottom: 24px;
 }
-
 .features-heading{
-  font-family: Roboto Condensed , sans-serif;
+  font-family: Roboto Condensed , "Roboto",  'Arial' , sans-serif;
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
@@ -254,7 +258,7 @@ display: inline-block;
 }
 
 .features-item-heading{
-  font-family: Roboto Condensed , sans-serif;
+  font-family: Roboto Condensed , "Roboto",  'Arial' , sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -266,7 +270,6 @@ display: inline-block;
 }
 
 .feature-item-text{
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -317,7 +320,7 @@ display: inline-block;
   width: 100%;
 }
 .promo-heading {
-  font-family: Roboto Condensed , sans-serif;
+  font-family: Roboto Condensed , "Roboto",  'Arial' , sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -334,7 +337,6 @@ display: inline-block;
 
 .promo-text p{
   margin-bottom: 12px;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -509,7 +511,6 @@ display: inline-block;
 
 }
 .site-footer-links li a{
-  font-family: Roboto , sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
