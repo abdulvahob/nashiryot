@@ -1,22 +1,8 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Roboto ,  sans-serif ;
-  transition: all .3s ease-out;
-}
-
 a{
   text-decoration: none;
+  outline: 2px dotted transparent;
 }
-*:focus{
-  outline: 2px dotted #FF7500;
-  padding: 2px;
-  box-sizing: content-box;
-}
-ul{
-  list-style: none;
-}
+
 .container{
   margin: 0 auto;
   max-width: 1180px;
@@ -25,11 +11,13 @@ ul{
   padding-right: 20px;
 }
 
-
-
+*:focus{
+  outline: 2px dotted red;
+  outline-offset: 3px;
+}
 /* ---------- main link start------------- */
 .main-link{
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 font-size: 13px;
 font-style: normal;
 font-weight: 700;
@@ -56,6 +44,8 @@ display: inline-block;
   width: 80px;
   border: none;
   height: 3px;
+  margin: 0;
+  padding: 0;
   background: #FF7500;
 }
 /* ---------orange line end -------- */
@@ -63,7 +53,7 @@ display: inline-block;
 
 
 /* --------- site heading start --------------- */
-.site-heading{
+.site-header{
   width: 100%;
   border-top:5px solid #FF7500 ;
   padding-top: 16px;
@@ -71,47 +61,49 @@ display: inline-block;
 
 }
 
-.site-heading-container{
+.site-header-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.site-heading-logo{
+.site-header-logo{
   display: inline-block;
 }
 
-.site-heading-logo img{
+.site-header-logo img{
   width: 227px;
   height: 60px;
 }
-.site-heading-logo img:hover{
+.site-header-logo:hover{
   opacity: 80%;
 }
-.site-heading-logo img:active{
+.site-header-logo:active{
   opacity: 60%;
 }
 
-.site-heading nav{
+.site-header nav{
   display: flex;
-}
-
-.site-heading nav ul{
-  display: flex;
-  margin-right: 32px;
   align-items: center;
 }
 
-.site-heading-item{
+.site-header nav ul{
+  display: flex;
+  margin-right: 32px;
+  list-style: none;
+  align-items: center;
+}
+
+.site-header-item{
   margin-right: 32px;
 
 }
 
-.site-heading-item:last-child{
+.site-header-item:last-child{
   margin-right: 0;
 }
 
-.site-heading-link{
-  font-family: Roboto;
+.site-header-link{
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -119,13 +111,15 @@ display: inline-block;
   letter-spacing: 1px;
   padding-top: 4px;
   padding-bottom: 4px;
+  color: #000;
   position: relative;
+  transition: all .3s ease-out;
 }
-.site-heading-link:hover{
+.site-header-link:hover{
   color: #FF7500;
 }
 
-.site-heading-link::after{
+.site-header-link::after{
   content: "";
   position: absolute;
   bottom: 0;
@@ -136,7 +130,7 @@ display: inline-block;
   width:0;
   transition: all .3s ease-in-out;
 }
-.site-heading-link:hover::after{
+.site-header-link:hover::after{
   width: 100%;
 }
 /* --------- site heading end --------------- */
@@ -144,8 +138,6 @@ display: inline-block;
 /*  --------- hero section start ------------ */
 .hero{
   background-color: #252420;
-  height: 448px;
-  width: 100%;
 }
 
 .hero-container{
@@ -153,11 +145,12 @@ display: inline-block;
   justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 88px;
+  flex-wrap: wrap;
 }
 .hero-container img{
   width: 500px;
   height: 500px;
-  margin-top: -40px;
+  margin-bottom: -170px;
 }
 .hero-content{
   width: 387px;
@@ -178,7 +171,7 @@ display: inline-block;
   margin-bottom: 24px;
 }
 .hero-text{
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -189,12 +182,39 @@ display: inline-block;
 }
 /*  --------- hero section end ------------ */
 
+@media (max-width:927px) {
+  .hero{
+    background-color: #252420;
+    height: 765px;
+    width: 100%;
+    padding: 30px 0;
+  }
+  .hero-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 88px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+.hero-text{
+  font-size: 15px;
+}
+.hero-heading{
+  font-size: 30px;
+}
+  .hero-container img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
 
+    margin-top: -40px;
+  }
+}
 
 /* ------------- features section start --------- */
 .features{
   padding: 210px 0;
-  width: 100%;
 }
 
 .features-container .orange-line{
@@ -215,6 +235,8 @@ display: inline-block;
 
 .features-items{
   display: flex;
+  list-style: none;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
 }
@@ -222,7 +244,6 @@ display: inline-block;
 .features-item{
   max-width: 340px;
   width: 100%;
-
 }
 
 .features-item img{
@@ -245,7 +266,7 @@ display: inline-block;
 }
 
 .feature-item-text{
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -256,9 +277,27 @@ display: inline-block;
   max-width: 314px;
 }
 /* ------------- features section end --------- */
-
+/* @media (max-width:768px) {
+  .features{
+    padding: 120px 0;
+    width: 100%;
+  }
+  .features-container{
+    padding: 0 10px;
+  }
+  .features-heading{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0.5px;
+    max-width: 435px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+} */
 /* ----------- promo section start --------- */
 .promo{
+  width: 100%;
   height: 419px;
   margin-top: 120px;
   margin-bottom: 160px;
@@ -269,7 +308,7 @@ display: inline-block;
   padding: 64px;
   justify-content: space-between;
   display: flex;
-
+  flex-wrap: wrap;
 }
 
 .promo-content{
@@ -291,12 +330,11 @@ display: inline-block;
 
 .promo-text{
   margin-bottom: 24px;
-
 }
 
 .promo-text p{
   margin-bottom: 12px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -313,12 +351,14 @@ display: inline-block;
 }
 
 .promo-img{
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
   height: 440px;
   object-fit: cover;
+  border-radius: 12px;
   margin-top: -148px;
 }
-.site-heading-link.active{
+.site-header-link.active{
   color: #FF7500;
 }
 
@@ -326,6 +366,73 @@ display: inline-block;
 
 /* ----------- promo section end --------- */
 
+/* @media (max-width:1070px) {
+  .promo{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+.promo-container{
+  padding: 44px;
+}
+  .promo-content{
+    max-width: 350px;
+    margin-right: 12px;
+    width: 100%;
+  }
+  .promo-img{
+    max-width: 380px;
+    width: 100%;
+    margin-top: 0px;
+    height: auto;
+  }
+  .promo-heading {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 24px !important;
+  }
+}
+@media (max-width:896px) {
+  .promo{
+    width: 100%;
+    height: auto;
+  }
+.promo-container{
+  padding: 44px;
+}
+  .promo-content{
+    max-width: 700px;
+    margin-right: 12px;
+    width: 100%;
+  }
+  .promo-img{
+    max-width: 540px;
+    width: 100%;
+    border-radius: 3%;
+    margin-top: 20px;
+  }
+  .promo-heading {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 24px !important;
+  }
+}
+
+@media (max-width:564px) {
+  .promo{
+    padding: 10px;
+  }
+ .promo-container{
+  padding: 24px;
+  }
+  .promo-img{
+    max-width: 740px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+} */
 
 /* ------------ footer start ------------ */
 .site-footer{
@@ -347,28 +454,30 @@ display: inline-block;
 }
 
 .site-footer-icon a{
-  display: inline-block;
+  display: block;
   margin-right: 16px;
-  width: 24px;
-  height: 24px;
+}
+.site-footer-icon a:last-child{
+  margin-right: 0;
 }
 
-.site-footer-icon a svg{
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  color: #252420;
-  object-fit: cover;
-}
-.site-footer-icon a:active svg{
+.site-footer-icon a:active{
   color: #FF7500;
   opacity: 60%;
 
 }
 
-.site-footer-icon a:hover svg {
+.site-footer-icon a:hover{
   color: #FF7500;
-
+}
+.site-footer-icon a svg{
+  transition:
+  all .3s ease-out;
+  display: block;
+  color: #252420;
+}
+.site-footer-icon a svg:hover{
+  color: #FF7500;
 }
 
 
@@ -381,6 +490,7 @@ display: inline-block;
 .site-footer-bottom{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 
 }
@@ -388,10 +498,15 @@ display: inline-block;
 .site-footer-links{
   max-width: 224px;
   width: 100%;
+  display: inline-block;
+  margin-bottom: 12px;
+  padding-left: 0;
 }
 
 .site-footer-links li{
   margin-bottom: 16px;
+  display: flex;
+
 }
 .site-footer-links li a{
   font-family: Roboto , sans-serif;
@@ -416,3 +531,6 @@ display: inline-block;
 }
 
 /* ------------ footer end ------------ */
+/* @media (max-width) {
+
+} */
